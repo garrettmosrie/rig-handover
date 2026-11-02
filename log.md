@@ -1,0 +1,4 @@
+- Workers reported: #2 4e2399e (page, src/views/digest.tsx), #3 b199be1 (JSON), #4 c65e9e6 (board link + counts), #5 0ca45f3 (route tests, red until #2/#3). All reviewed by diff.
+- Merged into main: issue-2 ff, issue-3 (one conflict in src/app.tsx: both added a route block before `return app`; kept both), issue-4, issue-5. Result: typecheck clean, 3 files / 10 tests green.
+- Rendered with the real marker through scripts/save-page.mjs: /digest/2026-10-28 -> preview/index.html (banner shows the marker, 6 rows incl. header, "1 line did not parse"); board shows both nights linked with "ok 4 · retry 4 · fail 1" and "ok 4 · retry 0 · fail 0"; /digest/2026-10-27 renders.
+- Closed #2–#5 with closing comments (claude-code · sonnet-5.5 · low), pushed main.
